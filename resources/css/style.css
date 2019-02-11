@@ -8,24 +8,19 @@
 }
 
 @font-face {
+	font-family: Montserrat-light;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+	font-family: Montserrat-thin;
+  src: url(../fonts/Montserrat-Thin.ttf);
+}
+
+
+@font-face {
 	font-family: Montserrat;
   src: url(../fonts/Montserrat-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-	font-family: Montserrat;
-  src: url(../fonts/Montserrat-Light.ttf);
-  font-weight: light;
-  font-style: normal;
-}
-
-@font-face {
-	font-family: Montserrat;
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-weight: thin;
-  font-style: normal;
 }
 
 
@@ -38,10 +33,11 @@
 html {
   color: #555;
   font-family: 'Montserrat', 'Arial', sans-serif;
-  font-weight: 300;
+  font-weight: lighter;
   font-size: 20px;
   text-rendering: optimizeLegibility;
-	background-color: #f8f9fa;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -89,13 +85,14 @@ nav li a:visited {
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
-  letter-spacing: 2px;
-  color: rgb(138, 138, 138);
+  color: white;
+  text-shadow: 2px 2px 10px #686868;
+  letter-spacing: 5px;
 }
 
 .link:hover,
 .link:active {
-  border-bottom: 2px solid #585858;
+font-weight: bold;
 } 
 
 
@@ -124,6 +121,7 @@ nav li a:visited {
 
 .link {
   margin: 0 20px;
+  font-weight: normal;
 }
 
 
@@ -135,15 +133,10 @@ header {
   height: 100vh;
 }
 
-section {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f8f9fa;;
-}
-
-
 #hero-background {
   position: absolute;
+  top: 0;
+  left: -1;
   min-width: 100%;
   min-height: 100%;
   width: 100vw;
@@ -152,9 +145,8 @@ section {
 }
 
 .title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-thin';
   color: white;
-  font-weight: 100;
   opacity: 0.9;
   margin: auto;
   text-align: center; 
@@ -191,10 +183,45 @@ footer {
   position: absolute;
   color: white;
   opacity: 0.7;
-  top: 70%;
+  top: 80%;
   left: 50%;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  
+  animation: MoveUpDown 1s ease-in-out infinite;
+}
+
+.description {
+  opacity: 1;
+  font-size: 18px;
+  color: white;
+  font-family: Montserrat-thin;
+  letter-spacing: 0.5px;
+}
+
+.next {
+  height: 100vh;
+  background-image: url("../images/eden-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.break {
+  height: 20vh;
+  background-color: rgb(39, 39, 39);
+  
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  45% {
+    bottom: 10px;
+  }
 }
