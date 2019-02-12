@@ -64,6 +64,11 @@ html {
 } */
 
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 /* Content */
 
@@ -124,24 +129,16 @@ font-weight: bold;
   font-weight: normal;
 }
 
-
-
 header {
-	background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  position: relative;
   height: 100vh;
 }
 
 #hero-background {
   position: absolute;
-  top: 0;
-  left: -1;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100vw;
   z-index: -1;
-  filter: blur(2px);
+  object-fit: cover;
+  min-height: 100vh;
 }
 
 .title {
@@ -168,10 +165,6 @@ header h1 {
 
 header p {
 	font-size: 0.8em;
-}
-
-footer {
-  height: 100vh;
 }
 
 .arrow {
@@ -212,9 +205,56 @@ footer {
 }
 
 .break {
-  height: 20vh;
+  width: 100%;
+  height: 50vh;
   background-color: rgb(39, 39, 39);
-  
+  color: white;
+  margin-top: 0px;
+}
+
+.about-title {
+  padding-top: 100px;
+  margin-top: 0px;
+  font-family: Montserrat-thin;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer {
+  height: 15vh;
+  background-color: rgb(39, 39, 39);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.socials {
+  color: white;
+  opacity: 0.8;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  align-self: center;
+  justify-self: center;
+}
+
+.socials > ul > li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.copyright {
+  color: white;
+  font-family: Montserrat-light;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  grid-column-start: 3;
+  grid-row-start: 4;
+  align-self: center;
+  justify-self: center;
 }
 
 @keyframes MoveUpDown {
