@@ -204,26 +204,58 @@ header p {
   color: white;
 }
 
-.about {
-  width: 100%;
+.about-section {
   height: 50vh;
-  background-color: rgb(39, 39, 39);
-  color: white;
-  margin-top: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .about-title {
-  margin-top: 0px;
+  position: absolute;
+  color: black;
   font-family: Montserrat-thin;
-  font-size: 24px;
-  letter-spacing: 3px;
+  margin-top: 20px;
+  padding-top: 0px;
+  width: 100%;
+  font-size: 100%;
+  letter-spacing: 7px;
   text-align: center;
   text-transform: uppercase;
-  grid-row-start: 2;
-  grid-column-start: 3;
+  
+}
+
+.about {
+  font-family: Montserrat-thin;
+  font-size: 28px;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: black;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 6fr;
+  grid-column-gap: 40px;
+}
+
+.about > .div, .about > .right-text  {
+  font-family: Montserrat-light;
+  font-size: 55%;
+  line-height: 25px;
+  justify-content: left;
+  grid-row: 4 / 5;
+}
+
+.div {
+  grid-column: 3 / 4;
+} 
+
+.left-image {
+  float: right;
+  height: 200px;
+  width: auto;
+}
+
+.about > .right-text {
+  grid-column: 4 /5;
+  border-left: 1px solid black;
 }
 
 footer {
