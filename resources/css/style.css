@@ -204,22 +204,26 @@ header p {
   color: white;
 }
 
-.break {
+.about {
   width: 100%;
   height: 50vh;
   background-color: rgb(39, 39, 39);
   color: white;
   margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .about-title {
-  padding-top: 100px;
   margin-top: 0px;
   font-family: Montserrat-thin;
   font-size: 24px;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
+  grid-row-start: 2;
+  grid-column-start: 3;
 }
 
 footer {
