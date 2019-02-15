@@ -129,30 +129,6 @@ font-weight: bold;
 
 header {
   position: relative;
-  height: 100vh;
-}
-
-#hero-background {
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-  min-height: 100vh;
-}
-
-.title {
-  font-family: 'Montserrat-thin';
-  color: black;
-  opacity: 0.9;
-  margin: auto;
-  text-align: center; 
-  margin: 0;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 
 
