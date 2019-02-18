@@ -458,12 +458,27 @@ footer {
   height: 100vh;
 }
 
-input, textarea {
+.contact-form label {
+  font-size: 80%;
+}
+
+.basic-input {
+  border-radius: 5px;
+  border: 2px solid rgb(165, 165, 165);
+  height: 1.5rem;
+}
+
+
+.contact-form input, .contact-form textarea {
   display: block;
 }
 
-.submit, .reset {
+.contact-form .submit, .contact-form .reset {
   display: inline-block;
+}
+
+.reset {
+  
 }
 
 
