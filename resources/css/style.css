@@ -60,18 +60,6 @@ ul {
   list-style-type: none;
   }
 
- 
-/* nav {
-  position: fixed;
-  display: none;
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid rgba(238,238,238 ,1);
-  background-color: white;
-  box-shadow: 5px 10px 20px -20px rgba(85,172,238 ,1);
-} */
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -91,9 +79,6 @@ nav li a:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 60%;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
   color: white;
   letter-spacing: 5px;
   text-shadow: rgb(56, 56, 56) 1px 1px 10px;
@@ -276,7 +261,7 @@ header p {
 .tour-info {
   display:grid;
   grid-column: main / right-gutter;
-  border-bottom: 2px solid rgba(70, 70, 70, 0.651);
+  border-bottom: 1px solid rgba(100,100,100,.7);
   padding: 25px 0;
   grid-template-columns: [date] 3fr [venue] 4fr [location] 4fr [buy] 3fr;
   grid-column-gap: 2rem;
@@ -284,25 +269,57 @@ header p {
   justify-items: start;
   font-size: 80%;
   letter-spacing: 1px;
+  font-family: Montserrat-bold;
+}
+
+.tour-info:last-child {
+  border-bottom:none;
 }
 
 .tour-date {
-  font-family: Montserrat-bold;
   text-transform: uppercase;
   font-size: 70%;
   letter-spacing: 3px;
 }
 .tour-venue {
-  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 70%;
+  letter-spacing: 3px;
 }
 
 .tour-location {
   justify-self: start;
+  text-transform: uppercase;
+  font-size: 70%;
+  letter-spacing: 3px;
 }
 
 .get-tickets {
+  text-transform: uppercase;
+  font-size: 70%;
+  letter-spacing: 3px;
   justify-self: end;
 }
+
+
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px;
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  -webkit-transition: background-color 0.2s, border 0.2s;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #25a25a;
+  border: 1px solid #25a25a;
+}
+
 
 footer {
   height: 15vh;

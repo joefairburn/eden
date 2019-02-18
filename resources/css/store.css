@@ -52,16 +52,6 @@ html {
   visibility: hidden;
 }
 
- 
-/* nav {
-  position: fixed;
-  display: none;
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid rgba(238,238,238 ,1);
-  background-color: white;
-  box-shadow: 5px 10px 20px -20px rgba(85,172,238 ,1);
-} */
 
 
 a {
@@ -111,9 +101,6 @@ nav li a:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 60%;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
   color: black;
   letter-spacing: 5px;
 }
@@ -178,7 +165,18 @@ nav a {
 
 .merch-box > .merch-image {
   padding-bottom: 5%;
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5s;
 }
+
+.merch-box > .merch-image:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
 
 .merch-box > .merch-name {
   text-align: center;
