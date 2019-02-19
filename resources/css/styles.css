@@ -8,22 +8,22 @@
 }
 
 @font-face {
-	font-family: Montserrat-light;
+  font-family: Montserrat-light;
   src: url(../fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
-	font-family: Montserrat-thin;
+  font-family: Montserrat-thin;
   src: url(../fonts/Montserrat-Thin.ttf);
 }
 
 @font-face {
-	font-family: Montserrat-bold;
+  font-family: Montserrat-bold;
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
-	font-family: Montserrat;
+  font-family: Montserrat;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 
@@ -64,7 +64,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  }
+}
 
 a {
   color: inherit;
@@ -82,7 +82,7 @@ header {
   padding-bottom: 10px;
 }
 
-main,
+.store-section, 
 .padded-header {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -115,25 +115,25 @@ nav li a:visited {
 .link:hover,
 .link:active {
   font-weight: bold;
-} 
+}
 
 .links {
-  list-style:none;
-  margin:0;
-  padding:0;
-  text-align:center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav li {
 
   font-weight: normal;
   width: 100px;
-  display:inline-block;
+  display: inline-block;
 }
 
 nav a {
-  display:inline-block;
-  padding:10px;
+  display: inline-block;
+  padding: 10px;
 }
 
 .branding {
@@ -153,7 +153,7 @@ nav a {
   color: white;
   opacity: 0.9;
   margin: auto;
-  text-align: center; 
+  text-align: center;
   margin: 0;
   position: absolute;
   letter-spacing: 5px;
@@ -168,16 +168,16 @@ nav a {
 
 
 header h1 {
-	font-size: 3em;
+  font-size: 3em;
 }
 
 header p {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .arrow {
   margin-top: 50px;
-  
+
 }
 
 .arrow {
@@ -190,7 +190,7 @@ header p {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  
+
   animation: MoveUpDown 1s ease-in-out infinite;
 }
 
@@ -217,7 +217,7 @@ header p {
   letter-spacing: 7px;
   text-align: center;
   text-transform: uppercase;
-  
+
 }
 
 .about {
@@ -232,7 +232,8 @@ header p {
   grid-column-gap: 20px;
 }
 
-.about > .div, .about > .right-text  {
+.about>.div,
+.about>.right-text {
   font-family: Montserrat-light;
   font-size: 50%;
   line-height: 25px;
@@ -242,7 +243,7 @@ header p {
 
 .div {
   grid-column: left-image / about-text;
-} 
+}
 
 .left-image {
   float: right;
@@ -250,7 +251,7 @@ header p {
   width: auto;
 }
 
-.about > .right-text {
+.about>.right-text {
   grid-column: about-text / right-gutter;
   padding-left: 10px;
   border-left: 1px solid #888888;
@@ -283,9 +284,9 @@ header p {
 
 
 .tour-info {
-  display:grid;
+  display: grid;
   grid-column: main / right-gutter;
-  border-bottom: 1px solid rgba(100,100,100,.7);
+  border-bottom: 1px solid rgba(100, 100, 100, .7);
   padding: 25px 0;
   grid-template-columns: [date] 3fr [venue] 4fr [location] 4fr [buy] 3fr;
   grid-column-gap: 2rem;
@@ -297,7 +298,7 @@ header p {
 }
 
 .tour-info:last-child {
-  border-bottom:none;
+  border-bottom: none;
   padding-bottom: 25px;
 }
 
@@ -306,6 +307,7 @@ header p {
   font-size: 70%;
   letter-spacing: 3px;
 }
+
 .tour-venue {
   text-transform: uppercase;
   font-size: 70%;
@@ -364,7 +366,7 @@ footer {
   justify-self: center;
 }
 
-.socials > ul > li {
+.socials>ul>li {
   display: inline;
   padding: 0 10px;
 }
@@ -421,7 +423,7 @@ footer {
 }
 
 
-.merch-box > .merch-image {
+.merch-box>.merch-image {
   padding-bottom: 5%;
   opacity: 0.8;
   width: 100%;
@@ -430,19 +432,19 @@ footer {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.merch-box > .merch-image:hover {
+.merch-box>.merch-image:hover {
   opacity: 1;
   transform: scale(1.15);
 }
 
 
-.merch-box > .merch-name {
+.merch-box>.merch-name {
   text-align: center;
   font-size: 80%;
   padding-bottom: 2%;
 }
 
-.merch-box > .merch-price {
+.merch-box>.merch-price {
   font-size: 50%;
 }
 
@@ -454,38 +456,114 @@ footer {
 
 /* Contact form */
 
+.contact-body {
+  background-image: url("../images/eden-full.jpg");
+  background-size: cover;
+}
+
+.breadcrumb-white strong {
+  color: white;
+}
+
+.breadcrumb-white {
+  color: rgb(209, 209, 209); 
+}
+
+
 .contact-section {
+  padding-bottom: 50px;
   height: 100vh;
 }
 
+.outer-form {
+  width: 20rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+}
+
+.contact-form {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.form-header {
+  font-family: Montserrat-Light;
+  font-size: 100%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
 .contact-form label {
-  font-size: 80%;
+  display: none;
 }
 
 .basic-input {
-  border-radius: 5px;
-  border: 2px solid rgb(165, 165, 165);
+  border: none;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.726);
   height: 1.5rem;
+  font-size: 80%;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10%; 
+  transition: border 0.2s linear;
+  color: rgb(43, 43, 43);
+}
+
+#contact-message {
+  height: auto;
+}
+
+.basic-input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(102, 102, 102);
 }
 
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   display: block;
 }
 
-.contact-form .submit, .contact-form .reset {
+.contact-form .submit {
   display: inline-block;
 }
 
-.reset {
-  
+
+.submit {
+  width: 100%;
+  display: inline-block;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 200px;
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  -webkit-transition: background-color 0.2s, border 0.2s;
+  transition: background-color 0.2s, border 0.2s;
 }
 
+.submit:hover,
+.submit:active {
+  background-color: #25a25a;
+  border: 1px solid #25a25a;
+  cursor: pointer;
+}
 
 @keyframes MoveUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     bottom: 0;
   }
+
   45% {
     bottom: 10px;
   }
