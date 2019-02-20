@@ -79,7 +79,7 @@ a {
 
 header {
   width: 100%;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .store-section, 
@@ -97,13 +97,15 @@ header {
 /* Content */
 
 
+/* reusable */
+
 nav {
   height: 60px;
 }
 
 nav li a:link,
 nav li a:visited {
-  padding-bottom: 5px;
+  margin-bottom: 5px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 60%;
@@ -133,7 +135,7 @@ nav li {
 
 nav a {
   display: inline-block;
-  padding: 10px;
+  margin: 10px;
 }
 
 .branding {
@@ -211,18 +213,16 @@ header p {
   position: absolute;
   font-family: Montserrat-thin;
   margin-top: 20px;
-  padding-top: 0px;
   width: 100%;
   font-size: 100%;
   letter-spacing: 7px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .about {
   font-family: Montserrat-thin;
-  font-size: 28px;
+  font-size: 28px;  
   height: 100%;
   background-color: #f8f9fa;
   padding-top: 50px;
@@ -368,7 +368,7 @@ footer {
 
 .socials>ul>li {
   display: inline;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .copyright {
@@ -391,7 +391,7 @@ footer {
 
 .padded-header {
   width: 100%;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -400,7 +400,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .store-title {
@@ -424,7 +424,7 @@ footer {
 
 
 .merch-box>.merch-image {
-  padding-bottom: 5%;
+  margin-bottom: 5%;
   opacity: 0.8;
   width: 100%;
   height: auto;
@@ -441,7 +441,7 @@ footer {
 .merch-box>.merch-name {
   text-align: center;
   font-size: 80%;
-  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .merch-box>.merch-price {
@@ -471,7 +471,6 @@ footer {
 
 
 .contact-section {
-  padding-bottom: 50px;
   height: 100vh;  
 }
 
