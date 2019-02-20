@@ -82,10 +82,45 @@ header {
   margin-bottom: 10px;
 }
 
-.store-section, 
-.padded-header {
+
+
+/* Reusable */
+
+.padding-sides {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+
+.box-container {
+  width: 20rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+}
+
+/* Breadcrumb */
+
+.breadcrumb-title {
+  font-family: Montserrat-thin;
+  font-size: 100%;
+  letter-spacing: 7px;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid rgb(153, 153, 153);
+  padding-bottom: 20px;
+}
+
+
+.breadcrumb-white strong {
+  color: white;
+}
+
+.breadcrumb-white {
+  color: rgb(209, 209, 209);
 }
 
 .breadcrumb-strong {
@@ -94,10 +129,8 @@ header {
 }
 
 
-/* Content */
 
-
-/* reusable */
+/* Nav */
 
 nav {
   height: 60px;
@@ -142,6 +175,52 @@ nav a {
   vertical-align: middle;
 }
 
+.black-nav li a:link,
+.black-nav li a:visited {
+  color: black;
+  text-shadow: none;
+}
+
+/* Footer */
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(39, 39, 39);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.socials {
+  color: white;
+  opacity: 0.8;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  align-self: center;
+  justify-self: center;
+}
+
+.socials>ul>li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.copyright {
+  color: white;
+  font-family: Montserrat-light;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  grid-column-start: 3;
+  grid-row-start: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Content */
 
 #hero-background {
   position: absolute;
@@ -222,7 +301,7 @@ header p {
 
 .about {
   font-family: Montserrat-thin;
-  font-size: 28px;  
+  font-size: 28px;
   height: 100%;
   background-color: #f8f9fa;
   padding-top: 50px;
@@ -328,6 +407,7 @@ header p {
   justify-self: end;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -339,52 +419,13 @@ header p {
   transition: background-color 0.2s, border 0.2s;
 }
 
+
 .btn:hover,
 .btn:active {
   background-color: #25a25a;
   border: 1px solid #25a25a;
+  cursor: pointer;
 }
-
-/* Footer */
-
-footer {
-  bottom: 0;
-  width: 100%;
-  height: 15vh;
-  background-color: rgb(39, 39, 39);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.socials {
-  color: white;
-  opacity: 0.8;
-  grid-column-start: 3;
-  grid-row-start: 3;
-  align-self: center;
-  justify-self: center;
-}
-
-.socials>ul>li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.copyright {
-  color: white;
-  font-family: Montserrat-light;
-  letter-spacing: 1.2px;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 20px;
-  grid-column-start: 3;
-  grid-row-start: 4;
-  align-self: center;
-  justify-self: center;
-}
-
-
 
 /* STORE */
 
@@ -403,15 +444,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.store-title {
-  font-family: Montserrat-thin;
-  font-size: 100%;
-  letter-spacing: 7px;
-  text-align: left;
-  text-transform: uppercase;
-  border-bottom: 0.5px solid rgb(153, 153, 153);
-  padding-bottom: 20px;
-}
 
 .merch-box {
   margin: 0;
@@ -448,12 +480,6 @@ footer {
   font-size: 50%;
 }
 
-.black-nav li a:link,
-.black-nav li a:visited {
-  color: black;
-  text-shadow: none;
-}
-
 /* Contact form */
 
 .contact-body {
@@ -461,27 +487,8 @@ footer {
   background-size: cover;
 }
 
-.breadcrumb-white strong {
-  color: white;
-}
-
-.breadcrumb-white {
-  color: rgb(209, 209, 209); 
-}
-
-
 .contact-section {
-  height: 100vh;  
-}
-
-.outer-form {
-  width: 20rem;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px;
+  height: 100vh;
 }
 
 .contact-form {
@@ -514,7 +521,7 @@ footer {
   font-size: 80%;
   width: 100%;
   margin: auto;
-  margin-bottom: 10%; 
+  margin-bottom: 10%;
   transition: border 0.2s linear;
   color: rgb(43, 43, 43);
 }
@@ -533,28 +540,10 @@ footer {
   display: block;
 }
 
-.contact-form .submit {
-  display: inline-block;
-}
 
-
-.submit {
+.submit-contact {
   width: 100%;
-  display: inline-block;
   color: white;
-  padding: 10px 30px;
-  border-radius: 200px;
-  background-color: #2ecc71;
-  border: 1px solid #2ecc71;
-  -webkit-transition: background-color 0.2s, border 0.2s;
-  transition: background-color 0.2s, border 0.2s;
-}
-
-.submit:hover,
-.submit:active {
-  background-color: #25a25a;
-  border: 1px solid #25a25a;
-  cursor: pointer;
 }
 
 /* music */
@@ -587,7 +576,7 @@ footer {
 
 .service:hover {
   background-color: #f1f1f1;
-  
+
 }
 
 .listen-heading {
@@ -600,15 +589,12 @@ footer {
   font-size: 16px;
   color: #25a25a;
   padding: 5px 20px;
-  border-radius: 200px;
   background-color: transparent;
   border: 1px solid #25a25a;
-  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 
-.service:hover > .btn-ghost {
+.service:hover>.btn-ghost {
   color: white;
   background: #25a25a;
   border-color: #25a25a;
