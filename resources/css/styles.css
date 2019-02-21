@@ -86,6 +86,10 @@ header {
 
 /* Reusable */
 
+.full-vh {
+  min-height: 100vh;
+}
+
 .padding-sides {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -168,6 +172,7 @@ nav li {
   font-weight: normal;
   width: 7.5%;
   display: inline-block;
+  margin: 0 10px;
 }
 
 nav a {
@@ -195,10 +200,8 @@ footer {
 }
 
 .socials {
-  padding-top: 30px;  
+  padding-top: 30px;
   color: white;
-  grid-column-start: 3;
-  grid-row-start: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +235,7 @@ footer {
   z-index: -1;
   object-fit: cover;
   min-height: 100vh;
+  
 }
 
 .title {
@@ -290,7 +294,7 @@ header p {
 }
 
 .about-section {
-  height: 50vh;
+  height: 300px;
   color: black;
 }
 
@@ -312,7 +316,7 @@ header p {
   background-color: #f8f9fa;
   padding-top: 50px;
   display: grid;
-  grid-template-columns: [left-gutter] 2fr [left-image] 1fr [about-text] 1fr [right-gutter] 2fr;
+  grid-template-columns: [left-gutter] 2fr [left-image] 220px [about-text] 220px [right-gutter] 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 6fr;
   grid-column-gap: 20px;
 }
@@ -377,9 +381,11 @@ header p {
   grid-column-gap: 2rem;
   align-items: center;
   justify-items: start;
-  font-size: 80%;
+  font-size: 50%;
   letter-spacing: 1px;
   font-family: Montserrat-bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .tour-info:last-child {
@@ -387,29 +393,11 @@ header p {
   padding-bottom: 25px;
 }
 
-.tour-date {
-  text-transform: uppercase;
-  font-size: 70%;
-  letter-spacing: 3px;
-}
-
-.tour-venue {
-  text-transform: uppercase;
-  font-size: 70%;
-  letter-spacing: 3px;
-}
-
 .tour-location {
   justify-self: start;
-  text-transform: uppercase;
-  font-size: 70%;
-  letter-spacing: 3px;
 }
 
 .get-tickets {
-  text-transform: uppercase;
-  font-size: 70%;
-  letter-spacing: 3px;
   justify-self: end;
 }
 
@@ -492,10 +480,6 @@ header p {
 .contact-body {
   background-image: url("../images/eden-full.jpg");
   background-size: cover;
-}
-
-.contact-section {
-  height: 100vh;
 }
 
 .contact-form {
@@ -605,6 +589,94 @@ header p {
   color: white;
   background: #25a25a;
   border-color: #25a25a;
+}
+
+@media screen and (max-width: 1280px) {
+  #hero-background {
+    display: none;
+  }
+
+  .landing-screen {
+    background-image: url("../images/eden-vid-still.jpg");
+    background-size: cover;
+  }
+
+  nav li {
+    width: 7.5%;
+  }
+
+  .about-section {
+    height: 50vh;
+  }
+
+
+  .about {
+    font-size: 25px;
+    grid-template-columns: [left-gutter] 2fr [left-image] 2fr [about-text] 2fr [right-gutter] 2fr;
+  }
+
+  .music-box {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    min-height: 15vh;
+    padding-bottom: 100px;
+  }
+  
+  .btn-tour,
+  .btn-tour:link,
+  .btn-tour:visited {
+    text-align: center;
+    padding: 8px 20px;
+    line-height: 1.5em;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  nav {
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 30px;
+  }
+
+  .black-nav li a:link,
+  .black-nav li a:visited {
+    color: white;
+    text-shadow: none;
+  }
+
+  .links {
+    padding-top: 10px;
+
+  }
+  nav li {
+    font-size: 1.5em;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .same-page,
+  .branding {
+    display: none;
+  }
+
+
+  .about-section {
+    height: 35vh;
+  }
+
+
+  .about {
+    font-size: 25px;
+    grid-template-columns: [left-gutter] 2fr [left-image] 5fr [about-text] 5fr [right-gutter] 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 6fr;
+  }
+
 }
 
 @keyframes MoveUpDown {
