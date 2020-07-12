@@ -142,6 +142,7 @@ nav {
 
 nav li a:link,
 nav li a:visited {
+	margin-left: 5%;
 	margin-bottom: 5px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -471,6 +472,7 @@ header p {
 .contact-body {
 	background-image: url("../images/eden-full.jpg");
 	background-size: cover;
+	background-position: center;
 }
 
 .contact-form {
@@ -587,6 +589,7 @@ header p {
 	.landing-screen {
 		background-image: url("../images/eden-vid-still.jpg");
 		background-size: cover;
+		background-position: center;
 	}
 
 	nav li {
@@ -619,6 +622,11 @@ header p {
 	nav {
 		background-color: rgb(24, 24, 24);
 		margin-bottom: 30px;
+	}
+
+	nav li a:link,
+	nav li a:visited {
+		font-size: 0.8em;
 	}
 
 	.black-nav li a:link,
@@ -695,11 +703,15 @@ header p {
 		padding: 0;
 		border: none;
 	}
-}
 
-@media screen and (max-width: 374px) {
-	nav li {
-		font-size: 1em;
+	.padding-sides {
+		padding: 0;
+	}
+
+	.padded-header {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
