@@ -1,727 +1,741 @@
 /* BASICS */
 
 @font-face {
-	font-family: Merriweather;
-	src: url(../fonts/Merriweather-Regular.ttf);
-	font-weight: normal;
-	font-style: normal;
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: Montserrat-light;
-	src: url(../fonts/Montserrat-Light.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-weight: 300;
 }
 
 @font-face {
-	font-family: Montserrat-thin;
-	src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-weight: 200;
 }
 
 @font-face {
-	font-family: Montserrat-bold;
-	src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 500;
 }
 
 @font-face {
-	font-family: Montserrat;
-	src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	max-width: 100%;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 html {
-	color: #555;
-	font-family: "Montserrat", "Arial", sans-serif;
-	font-size: 20px;
-	text-rendering: optimizeLegibility;
-	background-color: #f8f9fa;
-	scroll-behavior: smooth;
+  color: #555;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
 }
 
 body {
-	width: 100vw;
+  width: 100vw;
+}
+
+h2 {
+  font-family: Montserrat;
 }
 
 .clearfix {
-	zoom: 1;
+  zoom: 1;
 }
 
 .clearfix:after {
-	content: ".";
-	clear: both;
-	display: block;
-	height: 0;
-	visibility: hidden;
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .landing-screen {
-	max-width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+  max-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header {
-	width: 100%;
-	margin-bottom: 10px;
+  width: 100%;
 }
 
 /* Reusable */
 
 .full-vh {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 
 .padding-sides {
-	padding-left: 3rem;
-	padding-right: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .box-container {
-	width: 20rem;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px;
-	margin-top: 30px;
+  width: 20rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+  margin-top: 30px;
 }
 
 /* Breadcrumb */
 
 .breadcrumb-title {
-	font-family: Montserrat-thin;
-	font-size: 100%;
-	letter-spacing: 7px;
-	text-align: left;
-	text-transform: uppercase;
-	border-bottom: 0.5px solid rgb(153, 153, 153);
-	padding-bottom: 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 100%;
+  letter-spacing: 7px;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid rgb(153, 153, 153);
+  padding-bottom: 20px;
 }
 
 .breadcrumb-white strong {
-	color: white;
+  color: white;
 }
-
 .breadcrumb-white {
-	color: rgb(209, 209, 209);
+  color: rgb(209, 209, 209);
 }
 
 .breadcrumb-strong {
-	font-family: Montserrat;
-	color: black;
+  font-family: Montserrat;
+  color: black;
 }
 
 /* Nav */
 
 nav {
-	width: 100%;
-	height: 60px;
-	font-size: 12px;
+  width: 100%;
+  height: 60px;
+  font-size: 12px;
 }
 
 nav li a:link,
 nav li a:visited {
-	margin-left: 5%;
-	margin-bottom: 5px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 1em;
-	color: white;
-	letter-spacing: 5px;
-	text-shadow: rgb(56, 56, 56) 1px 1px 10px;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: rgb(56, 56, 56) 1px 1px 10px;
 }
 
 .link:hover,
 .link:active,
 .link:focus {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .links {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav li {
-	font-weight: normal;
-	width: 7.5%;
-	display: inline-block;
-	margin: 0 10px;
+  font-weight: normal;
+  width: 7.5%;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 nav a {
-	display: inline-block;
-	margin: 10px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .branding {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .black-nav li a:link,
 .black-nav li a:visited {
-	color: black;
-	text-shadow: none;
+  color: black;
+  text-shadow: none;
 }
 
 /* Footer */
 
 footer {
-	bottom: 0;
-	width: 100%;
-	height: 15vh;
-	background-color: rgb(39, 39, 39);
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(39, 39, 39);
 }
 
 .socials {
-	padding-top: 30px;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  padding-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-link {
-	display: inline;
-	margin: 0 10px;
-	opacity: 0.8;
-	transition: opacity 0.2s;
+  display: inline;
+  margin: 0 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
 }
 
 .social-link:hover,
 .social-link:focus {
-	opacity: 1;
+  opacity: 1;
 }
 
 .copyright {
-	margin-top: 20px;
-	color: rgb(207, 207, 207);
-	font-family: Montserrat-light;
-	letter-spacing: 1.2px;
-	font-size: 12px;
-	text-align: center;
+  margin-top: 20px;
+  color: rgb(207, 207, 207);
+  font-family: Montserrat;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  text-align: center;
 }
 
 /* Content */
 
 #hero-background {
-	position: absolute;
-	z-index: -1;
-	object-fit: cover;
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .title {
-	font-family: "Montserrat-thin";
-	font-size: 120%;
-	color: white;
-	opacity: 0.9;
-	margin: auto;
-	text-align: center;
-	margin: 0;
-	position: absolute;
-	letter-spacing: 5px;
-	top: 40%;
-	left: 50%;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+  font-size: 120%;
+  color: white;
+  opacity: 0.9;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  letter-spacing: 5px;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 header h1 {
-	font-size: 3em;
+  font-family: Montserrat;
+  font-size: 3em;
+  font-weight: 300;
 }
 
 header p {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .arrow {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 .arrow {
-	position: absolute;
-	color: white;
-	opacity: 0.7;
-	top: 80%;
-	left: 50%;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  color: white;
+  opacity: 0.7;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 
-	animation: MoveUpDown 1s ease-in-out infinite;
+  animation: MoveUpDown 1s ease-in-out infinite;
 }
 
 .description {
-	opacity: 1;
-	font-size: 18px;
-	color: white;
-	font-family: Montserrat-thin;
-	letter-spacing: 0.5px;
+  opacity: 1;
+  font-size: 18px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .about-section {
-	height: auto;
-	color: black;
-	padding-bottom: 40px;
+  height: auto;
+  color: black;
+  padding: 20px 0;
 }
 
 .about-title {
-	display: block;
-	font-family: Montserrat-thin;
-	width: 100%;
-	font-size: 100%;
-	letter-spacing: 7px;
-	text-align: center;
-	text-transform: uppercase;
-	padding-top: 10px;
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: rgb(51, 51, 51);
 }
 
 .about {
-	height: auto;
-	font-family: Montserrat-thin;
-	font-size: 28px;
-	background-color: #f8f9fa;
-	padding-top: 10px;
-
-	display: flex;
-	flex-direction: row;
-	align-content: center;
-	justify-content: center;
+  height: auto;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 28px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 .right-text {
-	height: min-content;
-	padding-left: 10px;
-	margin-left: 10px;
-	border-left: 1px solid #888888;
-	justify-content: left;
-	margin-top: auto;
-	margin-bottom: auto;
+  height: min-content;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #888888;
+  justify-content: left;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .about > .image-container,
 .about > .right-text {
-	font-family: Montserrat-light;
-	font-size: 50%;
-	line-height: 25px;
-	width: 250px;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 50%;
+  line-height: 25px;
+  width: 250px;
 }
 
 .image-container {
-	width: fit-content;
-	overflow: hidden;
-	text-align: center;
+  width: fit-content;
+  overflow: hidden;
+  text-align: center;
 }
 
 .left-image {
-	object-fit: cover;
-	float: right;
-	height: 100%;
-	height: 300px;
+  object-fit: cover;
+  float: right;
+  height: 100%;
+  height: 300px;
 }
 
 .tour-section {
-	height: auto;
-	padding: 0 10%;
-	padding-top: 10px;
-	background-image: url("../images/eden-background.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	color: white;
+  height: auto;
+  padding: 50px 10%;
+  background-image: url("../images/eden-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
 
 .tour-title {
-	font-family: Montserrat-Thin;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	margin-bottom: 20px;
-	padding: 0;
-	text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: left;
 }
 
 .tour-info {
-	display: grid;
-	grid-column: main / right-gutter;
-	border-bottom: 1px solid rgba(100, 100, 100, 0.7);
-	padding: 25px 0;
-	grid-template-columns: [date] 3fr [venue] 4fr [location] 4fr [buy] 3fr;
-	grid-column-gap: 2rem;
-	align-items: center;
-	justify-items: start;
-	font-size: 50%;
-	letter-spacing: 1px;
-	font-family: Montserrat-bold;
-	text-transform: uppercase;
-	letter-spacing: 3px;
+  display: grid;
+  grid-column: main / right-gutter;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.7);
+  padding: 25px 0;
+  grid-template-columns: [date] 3fr [venue] 4fr [location] 4fr [buy] 3fr;
+  grid-column-gap: 2rem;
+  align-items: center;
+  justify-items: start;
+  font-size: 50%;
+  letter-spacing: 1px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .tour-info:last-child {
-	border-bottom: none;
-	padding-bottom: 25px;
+  border-bottom: none;
+  padding-bottom: 25px;
 }
 
 .tour-location {
-	justify-self: start;
+  justify-self: start;
 }
 
 .get-tickets {
-	justify-self: end;
+  justify-self: end;
 }
 
 .btn,
 .btn:link,
 .btn:visited {
-	display: inline-block;
-	padding: 10px 30px;
-	border-radius: 200px;
-	background-color: #2ecc71;
-	border: 1px solid #2ecc71;
-	-webkit-transition: background-color 0.2s, border 0.2s;
-	transition: background-color 0.2s, border 0.2s;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px;
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  -webkit-transition: background-color 0.2s, border 0.2s;
+  transition: background-color 0.2s, border 0.2s;
 }
 
 .btn:hover,
 .btn:active,
 .btn:focus {
-	background-color: #25a25a;
-	border: 1px solid #25a25a;
-	cursor: pointer;
+  background-color: #25a25a;
+  border: 1px solid #25a25a;
+  cursor: pointer;
 }
 
 /* STORE */
 
 .padded-header {
-	width: 100%;
-	margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .store-section {
-	color: black;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-	grid-gap: 1rem;
-	margin-bottom: 20px;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 20px;
 }
 
 .merch-box {
-	margin: 0;
-	display: flex;
-	flex-flow: column;
-	padding: 2rem;
-	align-items: center;
-	justify-content: center;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .merch-box > .merch-image {
-	margin-bottom: 5%;
-	opacity: 0.8;
-	width: 100%;
-	height: auto;
-	transform: scale(1.03);
-	transition: transform 0.5s, opacity 0.5s;
+  margin-bottom: 5%;
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .merch-box > .merch-image:hover {
-	opacity: 1;
-	transform: scale(1.1);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .merch-box > .merch-name {
-	text-align: center;
-	font-size: 80%;
-	margin-bottom: 2%;
+  text-align: center;
+  font-size: 80%;
+  margin-bottom: 2%;
 }
 
 .merch-box > .merch-price {
-	font-size: 50%;
+  font-size: 50%;
 }
 
 /* Contact form */
 
 .contact-body {
-	background-image: url("../images/eden-full.jpg");
-	background-size: cover;
-	background-position: center;
+  background-image: url("../images/eden-full.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .contact-form {
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 .card-title {
-	font-family: Montserrat;
-	font-weight: bold;
-	margin: auto;
-	font-size: 100%;
-	margin-top: 2%;
-	margin-bottom: 15%;
+  font-family: Montserrat;
+  font-weight: 500;
+  margin: auto;
+  font-size: 100%;
+  margin-top: 2%;
+  margin-bottom: 15%;
 }
 
 .contact-form label {
-	display: none;
+  display: none;
 }
 
 .basic-input {
-	border: none;
-	border-bottom: 1px solid rgba(165, 165, 165, 0.726);
-	height: 1.5rem;
-	font-size: 80%;
-	width: 100%;
-	margin: auto;
-	margin-bottom: 10%;
-	transition: border 0.2s linear;
-	color: rgb(43, 43, 43);
+  border: none;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.726);
+  height: 1.5rem;
+  font-size: 80%;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10%;
+  transition: border 0.2s linear;
+  color: rgb(43, 43, 43);
 }
 
 #contact-message {
-	height: auto;
+  height: auto;
 }
 
 .basic-input:focus {
-	outline: none;
-	border-bottom: 1px solid rgb(102, 102, 102);
+  outline: none;
+  border-bottom: 1px solid rgb(102, 102, 102);
 }
 
 .contact-form input,
 .contact-form textarea {
-	display: block;
+  display: block;
 }
 
 .submit-contact {
-	width: 100%;
-	color: white;
+  width: 100%;
+  color: white;
 }
 
 /* music */
 
 .music-box {
-	padding-top: 0.5rem;
-	overflow: hidden;
-	align-items: center;
+  padding-top: 0.5rem;
+  overflow: hidden;
+  align-items: center;
 }
 
 .service {
-	width: 100%;
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem;
-	border-bottom: 1px solid #ddd;
-	transition: background-color 0.5s;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.5s;
 }
 
 .service:nth-child(2) {
-	border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 .service:last-child {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .service:hover,
 .service:focus {
-	background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .listen-heading {
-	text-align: center;
-	margin: 5px 0;
-	margin-bottom: 15px;
+  text-align: center;
+  margin: 5px 0;
+  margin-bottom: 15px;
 }
 
 .btn-ghost {
-	font-size: 16px;
-	color: #25a25a;
-	padding: 5px 20px;
-	background-color: transparent;
-	border: 1px solid #25a25a;
+  font-size: 16px;
+  color: #25a25a;
+  padding: 5px 20px;
+  background-color: transparent;
+  border: 1px solid #25a25a;
 }
 
 .service:hover > .btn-ghost,
 .service:focus > .btn-ghost {
-	color: white;
-	background: #25a25a;
-	border-color: #25a25a;
+  color: white;
+  background: #25a25a;
+  border-color: #25a25a;
 }
 
 @media screen and (max-width: 1280px) {
-	#hero-background {
-		display: none;
-	}
+  #hero-background {
+    display: none;
+  }
 
-	.landing-screen {
-		background-image: url("../images/eden-vid-still.jpg");
-		background-size: cover;
-		background-position: center;
-	}
+  .landing-screen {
+    background-image: url("../images/eden-vid-still.jpg");
+    background-size: cover;
+  }
 
-	nav li {
-		width: 7.5%;
-	}
+  nav li {
+    width: 7.5%;
+  }
 
-	.about {
-		font-size: 25px;
-	}
+  .about {
+    font-size: 25px;
+  }
 
-	.music-box {
-		margin-bottom: 50px;
-	}
+  .music-box {
+    margin-bottom: 50px;
+  }
 
-	footer {
-		min-height: 15vh;
-		padding-bottom: 100px;
-	}
+  footer {
+    min-height: 15vh;
+    padding-bottom: 100px;
+  }
 
-	.btn-tour,
-	.btn-tour:link,
-	.btn-tour:visited {
-		text-align: center;
-		padding: 8px 20px;
-		line-height: 1.5em;
-	}
+  .btn-tour,
+  .btn-tour:link,
+  .btn-tour:visited {
+    text-align: center;
+    padding: 8px 20px;
+    line-height: 1.5em;
+  }
 }
 
 @media screen and (max-width: 800px) {
-	nav {
-		background-color: rgb(24, 24, 24);
-		margin-bottom: 30px;
-	}
+  nav {
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 30px;
+  }
 
-	nav li a:link,
-	nav li a:visited {
-		font-size: 0.8em;
-	}
+  nav li a:link,
+  nav li a:visited {
+    font-size: 0.8em;
+  }
 
-	.black-nav li a:link,
-	.black-nav li a:visited {
-		color: white;
-		text-shadow: none;
-	}
+  .black-nav li a:link,
+  .black-nav li a:visited {
+    color: white;
+    text-shadow: none;
+  }
 
-	.links {
-		padding-top: 10px;
-	}
-	nav li {
-		font-size: 1.5em;
-		width: auto;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
+  .links {
+    padding-top: 10px;
+  }
+  nav li {
+    font-size: 1.5em;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 
-	.same-page,
-	.branding {
-		display: none;
-	}
+  .same-page,
+  .branding {
+    display: none;
+  }
 
-	.about {
-		font-size: 25px;
-	}
-	.breadcrumb-title {
-		text-align: center;
-		font-size: 80%;
-	}
+  .about {
+    font-size: 25px;
+  }
+  .breadcrumb-title {
+    text-align: center;
+    font-size: 80%;
+  }
 }
 
 @media screen and (max-width: 610px) {
-	.tour-title {
-		text-align: center;
-		margin-bottom: 20px;
-	}
-	.tour-info {
-		display: block;
-		padding: 25px 0;
-		align-items: center;
-		justify-items: start;
-		font-size: 50%;
-		letter-spacing: 1px;
-		font-family: Montserrat-bold;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-	}
+  .tour-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .tour-info {
+    display: block;
+    padding: 25px 0;
+    align-items: center;
+    justify-items: start;
+    font-size: 50%;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
 
-	.tour-info > li {
-		width: fit-content;
-		margin: auto;
-		margin-bottom: 15px;
-	}
-	.get-tickets {
-		justify-self: center;
-	}
+  .tour-info > li {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .get-tickets {
+    justify-self: center;
+  }
 
-	.about {
-		flex-direction: column;
-	}
-	.image-container {
-		margin-right: auto;
-		margin-left: auto;
-	}
+  .about {
+    flex-direction: column;
+  }
+  .image-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-	.right-text {
-		margin: 0;
-		text-align: center;
-		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0;
-		border: none;
-	}
+  .right-text {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: none;
+  }
 
-	.padding-sides {
-		padding: 0;
-	}
+  .padding-sides {
+    padding: 0;
+  }
 
-	.padded-header {
-		width: 75%;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  .padded-header {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about > .image-container {
+    width: auto;
+  }
 }
 
 @keyframes MoveUpDown {
-	0%,
-	100% {
-		bottom: 0;
-	}
+  0%,
+  100% {
+    bottom: 0;
+  }
 
-	45% {
-		bottom: 10px;
-	}
+  45% {
+    bottom: 10px;
+  }
 }
